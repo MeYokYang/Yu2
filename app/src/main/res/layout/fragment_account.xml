@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.AccountFragment"
+    android:orientation="vertical"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:layout_marginTop="50dp"
+    android:id="@+id/account">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:text="account"
+        android:background="#aaaa33"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_marginLeft="20dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_vertical"
+            android:background="#777777"/>
+
+        <TextView
+            android:id="@+id/username"
+            android:text="MeYok"
+            android:textSize="25sp"
+            android:paddingVertical="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:maxLength="20"
+            android:background="#235689"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/PS"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:maxLength="100"
+        android:hint="Please input personalized signature."
+        android:background="#33aaaa"/>
+
+    <Button
+        android:id="@+id/log_out"
+        android:text="LOG OUT"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#aaaa33"/>
+
+
+
+</LinearLayout>
