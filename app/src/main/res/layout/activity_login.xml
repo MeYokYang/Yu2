@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:background="@drawable/loginbackground">
+
+    <EditText
+        android:id="@+id/phone_number"
+        android:background="@drawable/login_input_border"
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:selectAllOnFocus="true"
+        android:inputType="phone"
+        android:paddingLeft="10dp"
+        android:hint=" PhoneNumber"
+        android:layout_marginRight="67dp"
+        android:layout_marginLeft="67dp"
+        android:layout_marginTop="123dp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:background="@drawable/login_input_border"
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:selectAllOnFocus="true"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:hint=" Password"
+        android:layout_marginRight="67dp"
+        android:layout_marginLeft="67dp"
+        android:layout_marginTop="30dp"
+        android:imeOptions="actionDone"/>
+
+    <Button
+        android:id="@+id/login_in"
+        android:background="#ABB8EFC4"
+        android:layout_height="50dp"
+        android:layout_width="270dp"
+        android:layout_marginTop="100dp"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:text="LOG IN"
+        android:layout_gravity="center_horizontal"/>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="270dp"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/forget_password"
+            android:background="@android:color/transparent"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textColor="#ff0000"
+            android:textSize="10dp"
+            android:text="FORGET PASSWORD"
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/sign_up"
+            android:background="@android:color/transparent"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textColor="#ffffff"
+            android:textSize="10dp"
+            android:text="SIGN UP"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
